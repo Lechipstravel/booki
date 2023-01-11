@@ -1,0 +1,261 @@
+body{
+	margin: 0px;
+	padding: 0 50px;
+	width: 1400px;
+}
+*{
+	font-family: 'Raleway', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+}
+h1{
+	font-size: 22px;
+	font-weight: 700;
+}
+h2{
+	font-size: 18px;
+	font-weight: 700;
+	height: 21px;
+}
+header{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.booki_logo{
+	height: 19px;
+}
+nav ul{
+	display: flex;
+	justify-content: flex-end;
+}
+ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0;
+}
+li:hover{
+	color: #0065FC;
+	border-top: 2px solid blue;
+}
+li{
+	padding: 20px;
+}
+#hbaslogo{
+	font-size: 22px;
+	font-weight: bolder;
+	padding-top: 23px;
+}
+#vilnat{
+	margin-top: -0.5em;
+}
+.fa-location-dot{
+	padding: 17px;
+	background-color: #F2F2F2;
+	border-radius: 15px 0px 0px 15px;
+}
+#searchb{
+	height: 42px;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 700;
+	border: 3px solid #F2F2F2;
+	border-right: none;
+	padding-left: 10px;
+}
+#searchb::placeholder{
+    color: black;
+}
+#bluebuton{
+	height: 50px;
+	border-radius: 0px 15px 15px 0px;
+	background-color: #0065FC;
+	color: white;
+	border: none;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 15px 16px;
+}
+.align{
+	justify-content: center;
+	align-items: center;
+}
+.filtres{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 21px;
+}
+#hfiltres{
+	margin-right: 30px;
+}
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
+	color: #0065FC;
+}
+.iconfiltre{
+	margin-right: 10px;
+}
+.ibord{
+	border: 2px solid #D9D9D9;
+	border-radius: 25px;
+	margin-right: 30px;
+	font-size: 17px;
+	font-weight: 700;
+	color: black;
+	padding: 10px 20px;
+}
+.ibord:hover{
+	background-color: #DEEBFF;
+}
+.fa-info{
+	margin-top: 20px;
+	color: #0065FC;
+	border: 1px solid #D9D9D9;
+	border-radius: 24px;
+	padding: 7px 12px;
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 10px;
+}
+#info{
+	margin-bottom: 30px;
+	display: flex;
+}
+.blocardheb{
+	width: 880px;
+	height: 626px;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	margin-bottom: 35px;
+}
+.h_hebmars{
+	padding-top: 15px;
+	padding-left: 50px;
+}
+.pic-hebmars{
+	width: 100%;
+	height: 124px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+.cardtop{
+	padding: 0 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+.cardbas{
+	padding: 0 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.cardheb{
+	width: 246px;
+	height: 199px;
+	border: 5px solid white;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px lightgrey;
+	background-color: white;
+}
+.h_card{
+	margin-top: 15px;
+	padding-left: 20px;
+}
+.p_card{
+	margin-top: -15px;
+}
+.fa-star{
+	color: #0065FC;
+}
+.gstar{
+	color: #F2F2F2;
+}
+.etoiles{
+	padding-bottom: 10px;
+	margin-top: -10px;
+}
+.card1{
+	object-fit: contain;
+	padding-left: 15px;
+	margin-top: -15px;
+}
+#h_affplus{
+	padding-left: 50px;
+	padding-top: 25px;
+}
+.pic-popu{
+	border-radius: 20px 0 0 20px;
+	width: 40%;
+	height: 144px;
+	object-fit: cover;
+}
+.blocardpopu{
+	width: 450px;
+	height: 626px;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+}
+.card{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.cardpopu{
+	width: 343px;
+	height: 144px;
+	display: flex;
+	flex-direction: row;
+	border: 5px solid white;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 0 5px 5px lightgrey;
+}
+.troiscardpop{
+	padding: 0 40px;
+	object-fit: contain;
+	display: flex;
+	flex-direction: column;
+}
+.bloc3cardacti{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+.card3{
+	object-fit: contain;
+	padding-left: 15px;
+}
+#h_plupop{
+	display: flex;
+	align-items: center;
+}
+.petoiles{
+	padding-bottom: 10px;
+}
+.pic-acti{
+	width: 302px;
+	height: 445px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+.cardacti{
+	border-radius: 20px;
+	box-shadow: 0 5px 5px lightgrey;
+}
+.footer{
+	width: 1340px;
+	height: 225px;
+	background-color: #F2F2F2;
+}
+.blocfooter{
+	display: flex;
+	justify-content: space-around;
+}
