@@ -1,7 +1,10 @@
 body{
 	margin: 0px;
 	padding: 0 50px;
-	width: 1400px;
+	max-width: 1400px;
+}
+.maxw{
+	max-width: 1400px;
 }
 *{
 	font-family: 'Raleway', sans-serif;
@@ -14,9 +17,12 @@ h1{
 	font-weight: 700;
 }
 h2{
+	font-size: 22px;
+	font-weight: 700;
+}
+h3{
 	font-size: 18px;
 	font-weight: 700;
-	height: 21px;
 }
 header{
 	width: 100%;
@@ -42,7 +48,7 @@ ul{
 }
 li:hover{
 	color: #0065FC;
-	border-top: 2px solid blue;
+	border-top: 2px solid #0065FC;
 }
 li{
 	padding: 20px;
@@ -82,6 +88,9 @@ li{
 	font-weight: 700;
 	padding: 15px 16px;
 }
+.fa-magnifying-glass{
+	display: none;
+}
 .align{
 	justify-content: center;
 	align-items: center;
@@ -92,11 +101,20 @@ li{
 	align-items: center;
 	margin-top: 21px;
 }
+.filtres form{
+	width: 100%;
+}
 #hfiltres{
 	margin-right: 30px;
+	font-size: 18px;
+	font-weight: 700;
 }
 .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
 	color: #0065FC;
+}
+
+#p_info{
+	margin-bottom: 35px;
 }
 .iconfiltre{
 	margin-right: 10px;
@@ -128,11 +146,9 @@ li{
 	display: flex;
 }
 .blocardheb{
-	width: 880px;
-	height: 626px;
+	width: 96.5%;
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	margin-bottom: 35px;
 }
 .h_hebmars{
 	padding-top: 15px;
@@ -145,21 +161,20 @@ li{
 	object-fit: cover;
 }
 .cardtop{
-	padding: 0 40px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin-bottom: 30px;
+	padding: 0 40px;
 }
 .cardbas{
-	padding: 0 40px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin: 0 40px;
 }
 .cardheb{
-	width: 246px;
-	height: 199px;
+	width: 29%;
 	border: 5px solid white;
 	border-radius: 20px;
 	box-shadow: 0 5px 5px lightgrey;
@@ -167,7 +182,6 @@ li{
 }
 .h_card{
 	margin-top: 15px;
-	padding-left: 20px;
 }
 .p_card{
 	margin-top: -15px;
@@ -185,38 +199,38 @@ li{
 .card1{
 	object-fit: contain;
 	padding-left: 15px;
-	margin-top: -15px;
+	margin-top: -10px;
 }
 #h_affplus{
 	padding-left: 50px;
 	padding-top: 25px;
+	font-size: 18px;
+	font-weight: 700;
 }
 .pic-popu{
 	border-radius: 20px 0 0 20px;
-	width: 40%;
+	width: 100%;
 	height: 144px;
 	object-fit: cover;
 }
 .blocardpopu{
-	width: 450px;
-	height: 626px;
+	margin-left: 3.5%;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 }
 .card{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .cardpopu{
-	width: 343px;
-	height: 144px;
 	display: flex;
 	flex-direction: row;
 	border: 5px solid white;
 	border-radius: 20px;
 	background-color: white;
 	box-shadow: 0 5px 5px lightgrey;
+	margin-bottom: 30px;
 }
 .troiscardpop{
 	padding: 0 40px;
@@ -228,34 +242,257 @@ li{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 60px;
+	width: 100%;
 }
 .card3{
 	object-fit: contain;
 	padding-left: 15px;
+	min-width: 55%;
 }
 #h_plupop{
 	display: flex;
 	align-items: center;
+	padding-right: 50px;
+	justify-content: space-between;
 }
 .petoiles{
-	padding-bottom: 10px;
+	display: flex;
+}
+#h_act{
+	margin-top: 55px;
+}
+.fa-chart-line{
+	color: #0065FC;
+	margin-top: 20px;
+}
+.h_cardacti{
+	margin-left: 15px;
 }
 .pic-acti{
-	width: 302px;
+	width: 100%;
 	height: 445px;
 	border-radius: 20px 20px 0 0;
 	object-fit: cover;
 }
 .cardacti{
+	width: 23%;
 	border-radius: 20px;
 	box-shadow: 0 5px 5px lightgrey;
 }
 .footer{
-	width: 1340px;
+	width: 100%;
 	height: 225px;
 	background-color: #F2F2F2;
 }
 .blocfooter{
 	display: flex;
 	justify-content: space-around;
+}
+.a_propos, .nos_heb, .assist{
+	width: 25%;
+	margin-top: 25px;
+	margin-right: -10%;
+}
+
+.nos_heb{
+	padding-right: 0%;
+}
+.assist{
+	margin-right: 0%;
+}
+.h_footer{
+	font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+	.filtres_tel{
+		display: none;
+	}
+}
+@media screen and (max-width: 991px) {
+	.card{
+		flex-direction: column;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 991px) {
+	.blocardheb{
+		width: 100%;
+		padding-bottom: 2%;
+	}
+}	
+	@media screen and (max-width: 991px) {
+	.blocardpopu{
+		margin-top: 50px;
+		margin-left: 0;
+		width: 100%;
+	}
+}	
+@media screen and (max-width: 991px) {
+	.bloc3cardacti{
+		width: 100%;
+	}
+	.troiscardpop{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.ibord{
+		font-size: 13px;
+		margin-right: 1%;
+	}
+	#hfiltres{
+		margin-right: 15px;
+		font-size: 17px;
+	}	
+	.cardpopu{
+		max-width: 30%;
+	}
+	.pic-acti{
+		height: 260px;
+	}
+	.h_cardacti{
+		margin-top: 5%;
+		margin-bottom: 3%;
+	}
+	#h_act{
+		margin-bottom: 35px;
+	}
+	.fa-magnifying-glass{
+		display: none;
+	}
+
+}
+@media screen and (max-width: 768px){
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.booki_logo{
+		margin-top: 20px;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	nav ul{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 20px;
+	}
+	li:hover{
+	color: #0065FC;
+	border-bottom: 2px solid #0065FC;
+	border-top: none;
+	}
+	li{
+	padding: 20px;
+	}
+	main{
+		padding: 0 20px;
+	}
+	.align{
+		width: 100%;
+	}
+	#bluebuton{
+		display: none;
+	}
+	.fa-magnifying-glass{
+		padding: 17px;
+		background-color: #0065FC;
+		color: white;
+		border-radius: 0 15px 15px 0;
+	}
+	.filtres_pc{
+		display: none;
+
+	}
+	.fa-heart, .fa-dog{
+		color: red;
+		display: flex;
+		align-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	#p_info{
+		margin-bottom: -3%;
+	}
+	.h_hebmars{
+		padding-left: 20px;
+	}
+	.blocardpopu{
+		border-radius: 0px;
+		order: -1;
+	}
+	.troiscardpop{
+		display: flex;
+		flex-direction: column;
+		padding: 0 20px;
+	}
+	.cardpopu{
+		max-width: 100%;
+	}
+	.card3{
+		width: 100%;
+	}
+	.pic-popu{
+		width: 100%;
+		height: 144px;
+	}
+	.popu_hp{
+		width: 100%;
+	}
+	.cardtop{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0px;
+		padding: 0 20px;
+	}
+	.cardbas{
+		display: flex;
+		flex-direction: column;
+		margin: 0 20px;
+	}
+	.cardheb{
+		min-width: 100%;
+		margin-bottom: 15px;
+	}
+	#h_affplus{
+		display: none;
+	}
+	.activite{
+		padding: 0 20px;
+	}
+	#h_act{
+		width: 32%;
+		margin-bottom: 5px;
+	}
+	.bloc3cardacti{
+		display: flex;
+		flex-direction: column;
+	}
+	.cardacti{
+		min-width: 100%;
+		margin-bottom: 25px;
+	}
+	.pic-acti{
+		height: 190px;
+	}
+	.h_cardacti{
+		margin-top: 3%;
+	}
+	.blocardheb{
+		background-color: white;
+		width: 100%;
+	}
+	.blocfooter{
+		display: flex;
+		flex-direction: column;
+	}
+	.footer{
+		height: 100%;
+	}
+	.a_propos, .nos_heb, .assist{
+		margin-left: 30px;
+		width: 100%;
+	}
 }
