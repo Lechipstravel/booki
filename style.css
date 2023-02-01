@@ -138,7 +138,6 @@ li{
 	border-radius: 24px;
 	padding: 7px 12px;
 	font-size: 16px;
-	font-weight: 400;
 	margin-right: 10px;
 }
 #info{
@@ -182,6 +181,8 @@ li{
 }
 .h_card{
 	margin-top: 15px;
+	font-size: 16px;
+	font-weight: 700;
 }
 .p_card{
 	margin-top: -15px;
@@ -232,6 +233,9 @@ li{
 	box-shadow: 0 5px 5px lightgrey;
 	margin-bottom: 30px;
 }
+.linkpop{
+	width: 37%;
+}
 .troiscardpop{
 	padding: 0 40px;
 	object-fit: contain;
@@ -247,7 +251,8 @@ li{
 .card3{
 	object-fit: contain;
 	padding-left: 15px;
-	min-width: 55%;
+	width: 63%;
+	box-sizing: border-box;
 }
 #h_plupop{
 	display: flex;
@@ -267,6 +272,8 @@ li{
 }
 .h_cardacti{
 	margin-left: 15px;
+	font-size: 16px;
+	font-weight: 700;
 }
 .pic-acti{
 	width: 100%;
@@ -302,6 +309,7 @@ li{
 }
 .h_footer{
 	font-size: 18px;
+	font-weight: 700;
 }
 @media screen and (min-width: 768px) {
 	.filtres_tel{
@@ -379,10 +387,14 @@ li{
 	justify-content: flex-start;
 	margin-top: 20px;
 	}
+	.nav{
+		
+	}
 	li:hover{
 	color: #0065FC;
 	border-bottom: 2px solid #0065FC;
 	border-top: none;
+	width: 50%;
 	}
 	li{
 	padding: 20px;
@@ -390,8 +402,13 @@ li{
 	main{
 		padding: 0 20px;
 	}
+	#searchb{
+		width: -webkit-fill-available;
+	}
 	.align{
 		width: 100%;
+		display: flex;
+		width: inherit;
 	}
 	#bluebuton{
 		display: none;
@@ -401,17 +418,29 @@ li{
 		background-color: #0065FC;
 		color: white;
 		border-radius: 0 15px 15px 0;
+		display: unset;
 	}
 	.filtres_pc{
-		display: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.filtres{
+		display: unset;
+	}
+	.ibord{
+		width: 130px;
+		padding-left: 2.5%;
+		margin-bottom: 5%;
+	}
+	.iconfiltre{
+		margin-right: 5px;
+	}
+	fa-person{
 
 	}
 	.fa-heart, .fa-dog{
-		color: red;
-		display: flex;
-		align-content: flex-start;
-		align-items: flex-start;
-		flex-wrap: wrap;
+		display: unset;
 	}
 	#p_info{
 		margin-bottom: -3%;
@@ -432,7 +461,10 @@ li{
 		max-width: 100%;
 	}
 	.card3{
-		width: 100%;
+;
+	}
+	#h_plupop{
+		padding-right: 4%;
 	}
 	.pic-popu{
 		width: 100%;
@@ -455,6 +487,7 @@ li{
 	.cardheb{
 		min-width: 100%;
 		margin-bottom: 15px;
+		box-sizing: border-box;
 	}
 	#h_affplus{
 		display: none;
@@ -475,7 +508,7 @@ li{
 		margin-bottom: 25px;
 	}
 	.pic-acti{
-		height: 190px;
+		height: 135px;
 	}
 	.h_cardacti{
 		margin-top: 3%;
@@ -493,6 +526,6 @@ li{
 	}
 	.a_propos, .nos_heb, .assist{
 		margin-left: 30px;
-		width: 100%;
+		width: auto;
 	}
 }
