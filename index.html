@@ -12,22 +12,22 @@
 </head>
 <body>
 	<div class="maxw">
-	<header>
-		<img class="booki_logo" src="assets/booki_logo.png" alt="booki_logo" title="booki_logo">
-		<nav class="naav">
-			<ul class="dheader">
-				<!-- mettre padding pour chaque li et penser au surlignement hover top bleu -->
-				<li><a href="#heber">Hébergements</a></li>
-				<li><a href="#h_act">Activités</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section>
+		<header>
+			<img class="booki_logo" src="assets/booki_logo.png" alt="booki_logo" title="booki_logo">
+			<nav class="naav">
+				<ul class="dheader">
+					<!-- mettre padding pour chaque li et penser au surlignement hover top bleu -->
+					<li><a href="#heber">Hébergements</a></li>
+					<li><a href="#h_act">Activités</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		<section class="padmobile">
 			<h1 id="hbaslogo">Trouvez votre hébergement pour de vacances de rêve</h1>
 			<p id="vilnat">En plein centre ville ou en pleine nature</p>
 		</section>
-		<section>
+		<section class="padmobile">
 			<form class="align" method="get" action="">
 				<i class="fa-solid fa-location-dot"></i><input type="text" name="searchb" id="searchb" autofocus focus placeholder="Marseille, France"><input id="bluebuton" type="submit" value="Rechercher"><i class="fa-solid fa-magnifying-glass"></i>
 			</form>
@@ -36,15 +36,18 @@
 			<p id="hfiltres">Filtres</p>
 			<form>
 				<div class="filtres_pc">
-				<a class="ibord" href=""><i class="fa-solid fa-money-bill-wave iconfiltre"></i>Économique</a>
-				<a class="ibord" href=""><i class="fa-solid fa-person iconfiltre"></i>Familial</a>
-				<a class="ibord" href=""><i class="fa-solid fa-heart iconfiltre"></i>Romantique</a>
-				<a class="ibord" href=""><i class="fa-solid fa-dog iconfiltre"></i>Animaux autorisés</a>
-			</div>
+					<a class="ibord" href=""><i class="fa-solid fa-money-bill-wave iconfiltre"><span class="eco-fa-ro-ani">Économique</span></i></a>
+					<a class="ibord" href=""><i class="fa-solid fa-person iconfiltre"><span class="eco-fa-ro-ani">Familial</span></i></a>
+					<a class="ibord" href=""><i class="fa-solid fa-heart iconfiltre"><span class="eco-fa-ro-ani">Romantique</span></i></a>
+					<a class="ibord" href=""><i class="fa-solid fa-dog iconfiltre"><span class="eco-fa-ro-ani">Animaux autorisés</i></a>
+				</div>
 
 			</form>
 		</section>
-				<p id="p_info"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p></div>
+				<div id="testo"><i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>
+
+	
 			<div class="card">				
 		<section class="blocardheb">
 			<h2 class="h_hebmars" id="heber">Hébergement à Marseille</h2>
@@ -226,6 +229,7 @@
 		</footer>
 	</div>
 </div>
+	</div>
 		
 </body>
 </html>

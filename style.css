@@ -109,6 +109,9 @@ li{
 	font-size: 18px;
 	font-weight: 700;
 }
+.eco-fa-ro-ani{
+	padding-left: 10px;
+}
 .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
 	color: #0065FC;
 }
@@ -136,13 +139,14 @@ li{
 	color: #0065FC;
 	border: 1px solid #D9D9D9;
 	border-radius: 24px;
-	padding: 7px 12px;
-	font-size: 16px;
+	padding: 7px 10px;
+	font-size: 11px;
 	margin-right: 10px;
 }
-#info{
+#testo{
 	margin-bottom: 30px;
 	display: flex;
+	align-items: baseline;
 }
 .blocardheb{
 	width: 96.5%;
@@ -386,9 +390,10 @@ li{
 	display: flex;
 	justify-content: flex-start;
 	margin-top: 20px;
+	width: 100%;
 	}
-	.nav{
-		
+	.naav{
+		width: 100%;
 	}
 	li:hover{
 	color: #0065FC;
@@ -398,9 +403,17 @@ li{
 	}
 	li{
 	padding: 20px;
+	width: 50%;
+	box-sizing: border-box;
 	}
 	main{
+		padding: 
+	}
+	.padmobile, .activite, .filtres, .filtres_pc, #testo{
 		padding: 0 20px;
+	}
+	#vilnat{
+		margin-bottom: 35px;
 	}
 	#searchb{
 		width: -webkit-fill-available;
@@ -420,6 +433,10 @@ li{
 		border-radius: 0 15px 15px 0;
 		display: unset;
 	}
+	#hfiltres{
+		margin-top: 35px;
+		padding-left: inherit;
+	}
 	.filtres_pc{
 		display: flex;
 		flex-wrap: wrap;
@@ -428,22 +445,38 @@ li{
 	.filtres{
 		display: unset;
 	}
+	.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
+		font-size: 14px;
+	}
+	.eco-fa-ro-ani{
+		padding-left: 4px;
+		font-size: 11px;
+	}
 	.ibord{
-		width: 130px;
-		padding-left: 2.5%;
+		width: 40%;
+		box-sizing: border-box;
 		margin-bottom: 5%;
+		font-size: 11px;
+		border-radius: 30px;
+		padding: 13px 7px;
 	}
 	.iconfiltre{
 		margin-right: 5px;
-	}
-	fa-person{
-
 	}
 	.fa-heart, .fa-dog{
 		display: unset;
 	}
 	#p_info{
 		margin-bottom: -3%;
+	}
+	#testo{
+		display: flex;
+		align-items: self-start;
+		margin-bottom: -20px;
+		margin-top: -15px;
+	}
+	.card{
+
 	}
 	.h_hebmars{
 		padding-left: 20px;
@@ -493,7 +526,7 @@ li{
 		display: none;
 	}
 	.activite{
-		padding: 0 20px;
+
 	}
 	#h_act{
 		width: 32%;
