@@ -143,7 +143,7 @@ li{
 	font-size: 11px;
 	margin-right: 10px;
 }
-#testo{
+#info{
 	margin-bottom: 30px;
 	display: flex;
 	align-items: baseline;
@@ -229,6 +229,7 @@ li{
 	justify-content: space-between;
 }
 .cardpopu{
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	border: 5px solid white;
@@ -236,6 +237,7 @@ li{
 	background-color: white;
 	box-shadow: 0 5px 5px lightgrey;
 	margin-bottom: 30px;
+	box-sizing: border-box;
 }
 .linkpop{
 	width: 37%;
@@ -385,12 +387,16 @@ li{
 	header{
 		display: flex;
 		flex-direction: column;
+		margin: 0px;
+		padding: 0px;
 	}
 	nav ul{
 	display: flex;
 	justify-content: flex-start;
 	margin-top: 20px;
 	width: 100%;
+	margin: 0px;
+	padding: 0px
 	}
 	.naav{
 		width: 100%;
@@ -409,7 +415,7 @@ li{
 	main{
 		padding: 
 	}
-	.padmobile, .activite, .filtres, .filtres_pc, #testo{
+	.padmobile, .activite, .filtres, .filtres_pc, #info{
 		padding: 0 20px;
 	}
 	#vilnat{
@@ -446,7 +452,7 @@ li{
 		display: unset;
 	}
 	.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
-		font-size: 14px;
+		font-size: 11px;
 	}
 	.eco-fa-ro-ani{
 		padding-left: 4px;
@@ -469,7 +475,7 @@ li{
 	#p_info{
 		margin-bottom: -3%;
 	}
-	#testo{
+	#info{
 		display: flex;
 		align-items: self-start;
 		margin-bottom: -20px;
