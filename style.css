@@ -266,7 +266,7 @@ li{
 	padding-right: 50px;
 	justify-content: space-between;
 }
-.petoiles{
+.petoiles, .p_card{
 	display: flex;
 }
 #h_act{
@@ -408,9 +408,11 @@ li{
 	width: 50%;
 	}
 	li{
-	padding: 20px;
 	width: 50%;
 	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
 	}
 	main{
 		padding: 
