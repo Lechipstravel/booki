@@ -1,7 +1,8 @@
 body{
 	margin: 0px;
 	padding: 0 50px;
-	max-width: 1400px;
+	display: flex;
+	justify-content: center;
 }
 .maxw{
 	max-width: 1400px;
@@ -57,9 +58,10 @@ li{
 	font-size: 22px;
 	font-weight: bolder;
 	padding-top: 23px;
+	margin-bottom: 0px;
 }
 #vilnat{
-	margin-top: -0.5em;
+	margin-top: 5px;
 }
 .fa-location-dot{
 	padding: 17px;
@@ -135,7 +137,7 @@ li{
 	background-color: #DEEBFF;
 }
 .fa-info{
-	margin-top: 20px;
+	margin-top: 12px;
 	color: #0065FC;
 	border: 1px solid #D9D9D9;
 	border-radius: 24px;
@@ -176,8 +178,11 @@ li{
 	justify-content: space-between;
 	margin: 0 40px;
 }
-.cardheb{
+.a-heb{
 	width: 29%;
+}
+.cardheb{
+	width: 100%;
 	border: 5px solid white;
 	border-radius: 20px;
 	box-shadow: 0 5px 5px lightgrey;
@@ -187,9 +192,11 @@ li{
 	margin-top: 15px;
 	font-size: 16px;
 	font-weight: 700;
+	margin-bottom: 0px;
 }
 .p_card{
-	margin-top: -15px;
+	margin-top: 5px;
+	margin-bottom: 0px;
 }
 .fa-star{
 	color: #0065FC;
@@ -198,8 +205,8 @@ li{
 	color: #F2F2F2;
 }
 .etoiles{
-	padding-bottom: 10px;
-	margin-top: -10px;
+	padding-bottom: 5px;
+	margin-top: 5px;
 }
 .card1{
 	object-fit: contain;
@@ -214,7 +221,7 @@ li{
 }
 .pic-popu{
 	border-radius: 20px 0 0 20px;
-	width: 100%;
+	width: 37%;
 	height: 144px;
 	object-fit: cover;
 }
@@ -240,7 +247,7 @@ li{
 	box-sizing: border-box;
 }
 .linkpop{
-	width: 37%;
+	width: 100%;
 }
 .troiscardpop{
 	padding: 0 40px;
@@ -266,7 +273,11 @@ li{
 	padding-right: 50px;
 	justify-content: space-between;
 }
-.petoiles, .p_card{
+.popu_hp{
+	display: flex;
+	flex-direction: column;
+}
+.spacestar{
 	display: flex;
 }
 #h_act{
@@ -280,6 +291,7 @@ li{
 	margin-left: 15px;
 	font-size: 16px;
 	font-weight: 700;
+	padding-bottom: 20px;
 }
 .pic-acti{
 	width: 100%;
@@ -287,8 +299,11 @@ li{
 	border-radius: 20px 20px 0 0;
 	object-fit: cover;
 }
-.cardacti{
+.a-acti{
 	width: 23%;
+}
+.cardacti{
+	width: 100%;
 	border-radius: 20px;
 	box-shadow: 0 5px 5px lightgrey;
 }
@@ -302,9 +317,9 @@ li{
 	justify-content: space-around;
 }
 .a_propos, .nos_heb, .assist{
-	width: 25%;
+	width: 33%;
 	margin-top: 25px;
-	margin-right: -10%;
+	padding-left: 45px;
 }
 
 .nos_heb{
@@ -508,7 +523,7 @@ li{
 		padding-right: 4%;
 	}
 	.pic-popu{
-		width: 100%;
+		width: 37%;
 		height: 144px;
 	}
 	.popu_hp{
@@ -524,6 +539,9 @@ li{
 		display: flex;
 		flex-direction: column;
 		margin: 0 20px;
+	}
+	.a-heb{
+		min-width: 100%;
 	}
 	.cardheb{
 		min-width: 100%;
@@ -544,6 +562,9 @@ li{
 		display: flex;
 		flex-direction: column;
 	}
+	.a-acti{
+		min-width: 100%;
+	}
 	.cardacti{
 		min-width: 100%;
 		margin-bottom: 25px;
@@ -563,10 +584,9 @@ li{
 		flex-direction: column;
 	}
 	.footer{
-		height: 100%;
+		height: 13%;
 	}
 	.a_propos, .nos_heb, .assist{
-		margin-left: 30px;
-		width: auto;
+		width: 60%;
 	}
 }
