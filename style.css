@@ -6,6 +6,7 @@ body{
 }
 .maxw{
 	max-width: 1400px;
+	width: 100%;
 }
 *{
 	font-family: 'Raleway', sans-serif;
@@ -131,7 +132,8 @@ li{
 	font-size: 17px;
 	font-weight: 700;
 	color: black;
-	padding: 10px 20px;
+	padding: 10px 14px;
+	margin-right: 18px;
 }
 .ibord:hover{
 	background-color: #DEEBFF;
@@ -186,10 +188,16 @@ li{
 	border: 5px solid white;
 	border-radius: 20px;
 	box-shadow: 0 5px 5px lightgrey;
-	background-color: white;
+	background-color: #FFFFFF;
+	height: 100%;
+}
+.heb-hp{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .h_card{
-	margin-top: 15px;
+	margin-top: 6px;
 	font-size: 16px;
 	font-weight: 700;
 	margin-bottom: 0px;
@@ -210,8 +218,11 @@ li{
 }
 .card1{
 	object-fit: contain;
-	padding-left: 15px;
-	margin-top: -10px;
+	padding-left: 7px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 #h_affplus{
 	padding-left: 50px;
@@ -266,6 +277,9 @@ li{
 	padding-left: 15px;
 	width: 63%;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 #h_plupop{
 	display: flex;
@@ -277,8 +291,8 @@ li{
 	display: flex;
 	flex-direction: column;
 }
-.spacestar{
-	display: flex;
+.petoiles{
+	margin-bottom: 4px;
 }
 #h_act{
 	margin-top: 55px;
@@ -291,7 +305,6 @@ li{
 	margin-left: 15px;
 	font-size: 16px;
 	font-weight: 700;
-	padding-bottom: 20px;
 }
 .pic-acti{
 	width: 100%;
@@ -306,6 +319,7 @@ li{
 	width: 100%;
 	border-radius: 20px;
 	box-shadow: 0 5px 5px lightgrey;
+	height: 100%;
 }
 .footer{
 	width: 100%;
@@ -367,17 +381,38 @@ li{
 	}
 	.ibord{
 		font-size: 13px;
-		margin-right: 1%;
+		margin-right: 7px;
 	}
 	#hfiltres{
 		margin-right: 15px;
 		font-size: 17px;
+	}
+	.etoiles{
+		font-size: 12px;
+	}
+	.linkpop{
+		width: 30%;
 	}	
 	.cardpopu{
-		max-width: 30%;
+		width: 100%;
+	}
+	.pic-popu{
+		width: 42%;
+	}
+	.petoiles{
+		font-size: 12px;
+	}
+	.h_card{
+		font-size: 14px;
+	}
+	.p_card{
+		font-size: 14px;
 	}
 	.pic-acti{
 		height: 260px;
+	}
+	.h_card{
+		font-size: 14px;
 	}
 	.h_cardacti{
 		margin-top: 5%;
@@ -429,9 +464,6 @@ li{
 	justify-content: center;
 	margin-top: 30px;
 	}
-	main{
-		padding: 
-	}
 	.padmobile, .activite, .filtres, .filtres_pc, #info{
 		padding: 0 20px;
 	}
@@ -476,7 +508,7 @@ li{
 		font-size: 11px;
 	}
 	.ibord{
-		width: 40%;
+		width: 47%;
 		box-sizing: border-box;
 		margin-bottom: 5%;
 		font-size: 11px;
@@ -514,7 +546,10 @@ li{
 		padding: 0 20px;
 	}
 	.cardpopu{
-		max-width: 100%;
+		width: 100%;
+	}
+	.linkpop{
+		width: 100%;
 	}
 	.card3{
 ;
@@ -574,6 +609,7 @@ li{
 	}
 	.h_cardacti{
 		margin-top: 3%;
+		padding-bottom: 14px;
 	}
 	.blocardheb{
 		background-color: white;
